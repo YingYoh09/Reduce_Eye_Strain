@@ -133,6 +133,13 @@ namespace _20_20_20_Rule_Eyestrain
             notifyIcon.Visible = false;
         }
 
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            isExit = true;
+            Close();
+        }
+
+
         private void ExitBtn_Click(object sender, EventArgs e)
         {
             isExit = true;

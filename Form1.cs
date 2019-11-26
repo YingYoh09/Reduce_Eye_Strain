@@ -16,6 +16,8 @@ namespace _20_20_20_Rule_Eyestrain
         private bool isBreak = false;
         private bool msgBoxShown = false, isExit = false;
 
+        System.Media.SoundPlayer player = new System.Media.SoundPlayer("193580__datwilightz__ting.wav");
+
         public Form1()
         {
             InitializeComponent();
@@ -25,7 +27,8 @@ namespace _20_20_20_Rule_Eyestrain
         {
             if (StartBtn.Text == "Start")
             {
-                Counter = int.Parse(cycleTextBox.Text)*60;
+                //Counter = int.Parse(cycleTextBox.Text)*60;
+                Counter = 2;
             }
             else
             {
@@ -46,11 +49,12 @@ namespace _20_20_20_Rule_Eyestrain
             {
                 if (!isBreak)
                 {
+                    player.Play();
                     Counter = int.Parse(BreakTimeTextBox.Text);
                     if (CycleCheckBox.Checked)
                     {
                         timer1.Enabled = false;
-                        if (MessageBox.Show("Nghỉ em ei") == DialogResult.OK)
+                        if (MessageBox.Show("Nghỉ em ei", "Prompt", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly) == DialogResult.OK)
                             timer1.Enabled = true;
                         else timer1.Enabled = true;
                     }
@@ -58,13 +62,16 @@ namespace _20_20_20_Rule_Eyestrain
                 }
                 else
                 {
+                    player.Play();
                     if (BreakTimeCheckBox.Checked)
                     {
                         timer1.Enabled = false;
-                        if (MessageBox.Show("Làm tiếp nào") == DialogResult.OK)
+                        if (MessageBox.Show("Làm tiếp nào", "Prompt", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly) == DialogResult.OK)
                             timer1.Enabled = true;
                         else timer1.Enabled = true;
                     }
+
+                    StartBtn.Enabled = true;
                     StartBtn.PerformClick();
                 }
 
@@ -100,7 +107,7 @@ namespace _20_20_20_Rule_Eyestrain
             StartBtn.Enabled = true;
             PauseBtn.Enabled = false;
             timer1.Enabled = false;
-            TimeLabel.Text = cycleTextBox.Text + " : " + BreakTimeTextBox.Text;
+            TimeLabel.Text = cycleTextBox.Text + " : " + "00";
         }
 
         private void Form1_Load(object sender, EventArgs e)

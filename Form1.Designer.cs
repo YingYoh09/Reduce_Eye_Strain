@@ -158,9 +158,9 @@
             this.TimeLabel.AutoSize = true;
             this.TimeLabel.Location = new System.Drawing.Point(8, 127);
             this.TimeLabel.Name = "TimeLabel";
-            this.TimeLabel.Size = new System.Drawing.Size(44, 17);
+            this.TimeLabel.Size = new System.Drawing.Size(52, 17);
             this.TimeLabel.TabIndex = 10;
-            this.TimeLabel.Text = "20 : 0";
+            this.TimeLabel.Text = "20 : 00";
             // 
             // StopBtn
             // 

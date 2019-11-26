@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eyestrain", "Eyestrain.csproj", "{FE604DC6-8C9E-48E0-91EA-797FB8AAA0DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reduce Eye Strain", "Reduce Eye Strain.csproj", "{FE604DC6-8C9E-48E0-91EA-797FB8AAA0DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -6,13 +6,13 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{FE604DC6-8C9E-48E0-91EA-797FB8AAA0DA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Eye_Strain</RootNamespace>
-    <AssemblyName>Eye Strain</AssemblyName>
+    <RootNamespace>Reduce_Eye_Strain</RootNamespace>
+    <AssemblyName>Reduce Eye Strain</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\Ying Yoh\Desktop\Eye Strain\</PublishUrl>
+    <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>

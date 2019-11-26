@@ -109,8 +109,27 @@ namespace _20_20_20_Rule_Eyestrain
             FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!isExit)
+            {
+                Hide();
+                notifyIcon.Visible = true;
+                notifyIcon.ShowBalloonTip(1000);
+                e.Cancel = true;
+            }
+        }
+
+        private void NotifyIcon_DoubleClick(object sender, EventArgs e)
+        {
+            Show();
+            this.WindowState = FormWindowState.Normal;
+            notifyIcon.Visible = false;
+        }
+
         private void ExitBtn_Click(object sender, EventArgs e)
         {
+            isExit = true;
             Close();
         }
     }

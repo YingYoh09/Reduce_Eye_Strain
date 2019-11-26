@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.cycleTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,6 +46,7 @@
             this.CycleCheckBox = new System.Windows.Forms.CheckBox();
             this.MsgBox = new System.Windows.Forms.ToolTip(this.components);
             this.BreakTimeCheckBox = new System.Windows.Forms.CheckBox();
+            this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.SuspendLayout();
             // 
             // cycleTextBox
@@ -195,6 +197,15 @@
             this.MsgBox.SetToolTip(this.BreakTimeCheckBox, "Show MsgBox each break time finished");
             this.BreakTimeCheckBox.UseVisualStyleBackColor = true;
             // 
+            // notifyIcon
+            // 
+            this.notifyIcon.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.notifyIcon.BalloonTipText = "Eye Strain Hidden to System Tray";
+            this.notifyIcon.BalloonTipTitle = "Eye Strain";
+            this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
+            this.notifyIcon.Text = "Eye Strain";
+            this.notifyIcon.DoubleClick += new System.EventHandler(this.NotifyIcon_DoubleClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -217,7 +228,8 @@
             this.Controls.Add(this.cycleTextBox);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "20-20-20 Rule Eye Strain";
+            this.Text = "Eye Strain";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -242,6 +254,7 @@
         private System.Windows.Forms.CheckBox CycleCheckBox;
         private System.Windows.Forms.ToolTip MsgBox;
         private System.Windows.Forms.CheckBox BreakTimeCheckBox;
+        private System.Windows.Forms.NotifyIcon notifyIcon;
     }
 }
 

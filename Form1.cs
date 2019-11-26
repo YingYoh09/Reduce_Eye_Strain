@@ -27,8 +27,7 @@ namespace _20_20_20_Rule_Eyestrain
         {
             if (StartBtn.Text == "Start")
             {
-                //Counter = int.Parse(cycleTextBox.Text)*60;
-                Counter = 2;
+                Counter = int.Parse(cycleTextBox.Text)*60;
             }
             else
             {

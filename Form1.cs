@@ -44,6 +44,7 @@ namespace _20_20_20_Rule_Eyestrain
         {
             Counter--;
             TimeLabel.Text = (Counter / 60).ToString() + " : " + (Counter % 60).ToString();
+            notifyIcon.Text = "Reduce Eye Strain " + TimeLabel.Text;
             if (Counter == 0)
             {
                 if (!isBreak)
@@ -126,19 +127,18 @@ namespace _20_20_20_Rule_Eyestrain
             }
         }
 
-        private void NotifyIcon_DoubleClick(object sender, EventArgs e)
-        {
-            Show();
-            this.WindowState = FormWindowState.Normal;
-            notifyIcon.Visible = false;
-        }
-
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             isExit = true;
             Close();
         }
 
+        private void NotifyIcon_MouseClick(object sender, MouseEventArgs e)
+        {
+            Show();
+            this.WindowState = FormWindowState.Normal;
+            notifyIcon.Visible = false;
+        }
 
         private void ExitBtn_Click(object sender, EventArgs e)
         {

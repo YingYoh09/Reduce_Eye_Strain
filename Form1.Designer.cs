@@ -207,8 +207,8 @@
             this.notifyIcon.BalloonTipTitle = "Reduce Eye Strain";
             this.notifyIcon.ContextMenuStrip = this.contextMenuStrip1;
             this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
-            this.notifyIcon.Text = "Eye Strain";
-            this.notifyIcon.DoubleClick += new System.EventHandler(this.NotifyIcon_DoubleClick);
+            this.notifyIcon.Text = "Reduce Eye Strain";
+            this.notifyIcon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.NotifyIcon_MouseClick);
             // 
             // contextMenuStrip1
             // 

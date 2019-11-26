@@ -23,7 +23,7 @@ namespace _20_20_20_Rule_Eyestrain
             InitializeComponent();
         }
 
-        private void StartBtn_Click(object sender, EventArgs e)
+        private void startBtn_Implement()
         {
             if (StartBtn.Text == "Start")
             {
@@ -40,9 +40,14 @@ namespace _20_20_20_Rule_Eyestrain
             PauseBtn.Enabled = true;
         }
 
+        private void StartBtn_Click(object sender, EventArgs e)
+        {
+            startBtn_Implement();
+        }
+
         private void Timer1_Tick(object sender, EventArgs e)
         {
-            Counter--;
+            --Counter;
             TimeLabel.Text = (Counter / 60).ToString() + " : " + (Counter % 60).ToString();
             notifyIcon.Text = "Reduce Eye Strain " + TimeLabel.Text;
             if (Counter == 0)
@@ -71,8 +76,7 @@ namespace _20_20_20_Rule_Eyestrain
                         else timer1.Enabled = true;
                     }
 
-                    StartBtn.Enabled = true;
-                    StartBtn.PerformClick();
+                    startBtn_Implement();
                 }
 
                 isBreak = !isBreak;

@@ -54,9 +54,10 @@
             // 
             // cycleTextBox
             // 
-            this.cycleTextBox.Location = new System.Drawing.Point(97, 26);
+            this.cycleTextBox.Location = new System.Drawing.Point(106, 30);
+            this.cycleTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cycleTextBox.Name = "cycleTextBox";
-            this.cycleTextBox.Size = new System.Drawing.Size(40, 22);
+            this.cycleTextBox.Size = new System.Drawing.Size(41, 22);
             this.cycleTextBox.TabIndex = 0;
             this.cycleTextBox.Text = "20";
             this.cycleTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -64,17 +65,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(143, 27);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(152, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 18);
+            this.label1.Size = new System.Drawing.Size(57, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Minutes";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(49, 29);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(58, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 17);
             this.label2.TabIndex = 2;
@@ -83,7 +85,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 77);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(25, 82);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 17);
             this.label3.TabIndex = 5;
@@ -92,25 +95,27 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(143, 75);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(152, 82);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 18);
+            this.label4.Size = new System.Drawing.Size(63, 17);
             this.label4.TabIndex = 4;
             this.label4.Text = "Seconds";
             // 
             // BreakTimeTextBox
             // 
-            this.BreakTimeTextBox.Location = new System.Drawing.Point(97, 74);
+            this.BreakTimeTextBox.Location = new System.Drawing.Point(106, 78);
+            this.BreakTimeTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BreakTimeTextBox.Name = "BreakTimeTextBox";
-            this.BreakTimeTextBox.Size = new System.Drawing.Size(40, 22);
+            this.BreakTimeTextBox.Size = new System.Drawing.Size(41, 22);
             this.BreakTimeTextBox.TabIndex = 3;
             this.BreakTimeTextBox.Text = "20";
             this.BreakTimeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // StartBtn
             // 
-            this.StartBtn.Location = new System.Drawing.Point(66, 119);
+            this.StartBtn.Location = new System.Drawing.Point(76, 123);
+            this.StartBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.StartBtn.Name = "StartBtn";
             this.StartBtn.Size = new System.Drawing.Size(177, 33);
             this.StartBtn.TabIndex = 6;
@@ -121,7 +126,8 @@
             // PauseBtn
             // 
             this.PauseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PauseBtn.Location = new System.Drawing.Point(259, 21);
+            this.PauseBtn.Location = new System.Drawing.Point(277, 25);
+            this.PauseBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PauseBtn.Name = "PauseBtn";
             this.PauseBtn.Size = new System.Drawing.Size(65, 33);
             this.PauseBtn.TabIndex = 7;
@@ -132,7 +138,8 @@
             // ExitBtn
             // 
             this.ExitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExitBtn.Location = new System.Drawing.Point(259, 119);
+            this.ExitBtn.Location = new System.Drawing.Point(277, 123);
+            this.ExitBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ExitBtn.Name = "ExitBtn";
             this.ExitBtn.Size = new System.Drawing.Size(65, 33);
             this.ExitBtn.TabIndex = 8;
@@ -148,7 +155,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(12, 9);
+            this.linkLabel1.Location = new System.Drawing.Point(11, 9);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(33, 17);
             this.linkLabel1.TabIndex = 9;
@@ -159,7 +166,7 @@
             // TimeLabel
             // 
             this.TimeLabel.AutoSize = true;
-            this.TimeLabel.Location = new System.Drawing.Point(8, 127);
+            this.TimeLabel.Location = new System.Drawing.Point(17, 131);
             this.TimeLabel.Name = "TimeLabel";
             this.TimeLabel.Size = new System.Drawing.Size(52, 17);
             this.TimeLabel.TabIndex = 10;
@@ -168,7 +175,8 @@
             // StopBtn
             // 
             this.StopBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StopBtn.Location = new System.Drawing.Point(259, 69);
+            this.StopBtn.Location = new System.Drawing.Point(277, 73);
+            this.StopBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.StopBtn.Name = "StopBtn";
             this.StopBtn.Size = new System.Drawing.Size(65, 33);
             this.StopBtn.TabIndex = 11;
@@ -181,7 +189,8 @@
             this.CycleCheckBox.AutoSize = true;
             this.CycleCheckBox.Checked = true;
             this.CycleCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CycleCheckBox.Location = new System.Drawing.Point(225, 29);
+            this.CycleCheckBox.Location = new System.Drawing.Point(234, 34);
+            this.CycleCheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CycleCheckBox.Name = "CycleCheckBox";
             this.CycleCheckBox.Size = new System.Drawing.Size(18, 17);
             this.CycleCheckBox.TabIndex = 12;
@@ -193,7 +202,8 @@
             this.BreakTimeCheckBox.AutoSize = true;
             this.BreakTimeCheckBox.Checked = true;
             this.BreakTimeCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.BreakTimeCheckBox.Location = new System.Drawing.Point(225, 77);
+            this.BreakTimeCheckBox.Location = new System.Drawing.Point(234, 82);
+            this.BreakTimeCheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BreakTimeCheckBox.Name = "BreakTimeCheckBox";
             this.BreakTimeCheckBox.Size = new System.Drawing.Size(18, 17);
             this.BreakTimeCheckBox.TabIndex = 13;
@@ -230,7 +240,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(336, 167);
+            this.ClientSize = new System.Drawing.Size(354, 167);
             this.Controls.Add(this.BreakTimeCheckBox);
             this.Controls.Add(this.CycleCheckBox);
             this.Controls.Add(this.StopBtn);
@@ -246,6 +256,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cycleTextBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reduce Eye Strain";

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eyestrain", "Eyestrain.csproj", "{FE604DC6-8C9E-48E0-91EA-797FB8AAA0DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE604DC6-8C9E-48E0-91EA-797FB8AAA0DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE604DC6-8C9E-48E0-91EA-797FB8AAA0DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE604DC6-8C9E-48E0-91EA-797FB8AAA0DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE604DC6-8C9E-48E0-91EA-797FB8AAA0DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BED5D7FC-1BAB-44CD-A5F3-F09B9D8CF2BF}
+	EndGlobalSection
+EndGlobal
